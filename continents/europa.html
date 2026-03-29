@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <script
+  src="http://localhost:4200/loader.js"
+  data-name="Aria"
+  defer>
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Europa — I Continenti</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1120;--deep:#0e1a2e;--gold:#c9933a;--gold-l:#e8b86d;--teal:#2a9d8f;--muted:#8a9ab5;--sand:#f4ede3;--white:#fff;--accent:#c9933a;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--sand);overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+.bar{background:rgba(11,17,32,.9);border-bottom:1px solid rgba(255,255,255,.07);padding:.8rem 2rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;backdrop-filter:blur(14px);}
+.bar-home{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--gold);font-weight:700;}
+.nav-row{display:flex;gap:.8rem;}
+.nav-a{padding:.45rem 1.1rem;border:1px solid rgba(201,147,58,.3);border-radius:6px;font-size:.82rem;color:var(--gold-l);transition:background .2s;white-space:nowrap;}
+.nav-a:hover{background:rgba(201,147,58,.12);}
+.nav-a.off{opacity:.25;pointer-events:none;}
+.hero{padding:4rem 2rem 2.5rem;max-width:960px;margin:0 auto;}
+.flag{font-size:5.5rem;display:block;margin-bottom:1rem;filter:drop-shadow(0 4px 24px rgba(201,147,58,.4));}
+.sub-tag{font-size:.7rem;text-transform:uppercase;letter-spacing:.18em;color:var(--gold);font-weight:500;margin-bottom:.5rem;}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:900;line-height:.95;color:var(--white);margin-bottom:1.5rem;}
+.facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:.9rem;margin-bottom:2.5rem;}
+.fbox{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:1rem 1.2rem;}
+.flabel{font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:.3rem;}
+.fval{font-size:.97rem;color:var(--gold-l);font-weight:500;}
+.wow-box{background:linear-gradient(135deg,rgba(0,51,153,.15),rgba(201,147,58,.1));border:1px solid rgba(201,147,58,.3);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:2.5rem;display:flex;gap:1rem;align-items:flex-start;}
+.wow-icon{font-size:1.8rem;flex-shrink:0;}
+.wow-text{font-size:.9rem;color:var(--sand);line-height:1.6;font-weight:300;}
+.wow-text strong{color:var(--gold);font-weight:500;}
+.desc-wrap{max-width:960px;margin:0 auto;padding:0 2rem 5rem;}
+.desc-wrap h2{font-family:'Playfair Display',serif;font-size:1.75rem;color:var(--white);margin-bottom:1.1rem;}
+.desc-wrap p{color:var(--muted);line-height:1.9;font-size:.98rem;font-weight:300;margin-bottom:1.4rem;}
+.back{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.6rem;background:var(--gold);color:#111;border-radius:8px;font-size:.88rem;font-weight:600;margin-top:1rem;transition:background .2s;}
+.back:hover{background:var(--gold-l);}
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.8rem;border-top:1px solid rgba(255,255,255,.06);}
+footer strong{color:var(--gold);}
+</style>
+</head>
+<body>
+<div class="bar">
+  <a class="bar-home" href="../index.html">🌍 I Continenti</a>
+  <div class="nav-row">
+    <a class="nav-a" href="asia.html">← Prec.</a>
+    <a class="nav-a" href="oceania.html">Succ. →</a>
+  </div>
+</div>
+
+<div class="hero">
+  <span class="flag">🌍</span>
+  <div class="sub-tag">La culla della civiltà occidentale</div>
+  <h1>Europa</h1>
+  <div class="facts">
+    <div class="fbox"><div class="flabel">Superficie</div><div class="fval">10.530.000 km²</div></div>
+    <div class="fbox"><div class="flabel">Popolazione</div><div class="fval">~748 milioni</div></div>
+    <div class="fbox"><div class="flabel">Nazioni</div><div class="fval">44</div></div>
+    <div class="fbox"><div class="flabel">Nazione più grande</div><div class="fval">Russia (parte europea)</div></div>
+    <div class="fbox"><div class="flabel">Città più grande</div><div class="fval">Istanbul (~15 milioni)</div></div>
+    <div class="fbox"><div class="flabel">Punto più alto</div><div class="fval">Elbrus (5.642 m)</div></div>
+    <div class="fbox"><div class="flabel">Punto più basso</div><div class="fval">Mar Caspio (−28 m)</div></div>
+    <div class="fbox"><div class="flabel">Siti UNESCO</div><div class="fval">Oltre 500 (primato mondiale)</div></div>
+  </div>
+  <div class="wow-box">
+    <span class="wow-icon">🏛️</span>
+    <div class="wow-text"><strong>Lo sapevi?</strong> L'Europa ha dato i natali alla prima democrazia (Atene, 507 a.C.), alla prima università (Bologna, 1088), al libro a stampa (Magonza, 1455), alla rivoluzione industriale (Inghilterra, 1760), e al World Wide Web (CERN, 1989). Un continente piccolo ma di proporzioni monumentali per la storia del mondo.</div>
+  </div>
+</div>
+
+<div class="desc-wrap">
+  <h2>La Culla del Mondo Moderno</h2>
+  <p>L'Europa è il secondo continente più piccolo del mondo per superficie, ma forse il più influente della storia moderna. Con i suoi 10,5 milioni di km² e 748 milioni di abitanti, ha plasmato il diritto internazionale, la scienza, la filosofia, le arti e le strutture politiche di quasi tutto il globo. Si estende dalla punta settentrionale della Norvegia (71°N) alle coste meridionali di Cipro e della Grecia (35°N), e dalle Azzorre portoghesi agli Urali russi. Comprende sistemi montuosi come le Alpi, i Pirenei, i Carpazi e il Caucaso, fiumi leggendari come il Reno, il Danubio, la Senna e il Tamigi, e una straordinaria varietà di paesaggi: fiordi scandinavi, pianure dell'Europa centrale, coste adriatiche e mediterranee, steppe pontiche e tundra artica.</p>
+  <p>La storia europea è segnata da trionfi e tragedie di portata globale. La Grecia antica ha inventato la democrazia (Atene, 507 a.C.), il teatro, la filosofia sistematica — da Socrate a Platone ad Aristotele — e le basi della matematica e della logica occidentale. L'Impero Romano ha poi unificato gran parte del continente tra il 27 a.C. e il 476 d.C., lasciando un'eredità di diritto codificato, ingegneria civile (strade, acquedotti, terme, anfiteatri) e lingua latina che ancora permea le lingue romanze di oggi. Il Rinascimento italiano (XIV-XVI secolo) ha riscoperto e superato l'arte classica, generando Leonardo da Vinci, Michelangelo, Raffaello, Botticelli e Brunelleschi. La Riforma Protestante di Martin Lutero (1517) ha spaccato la cristianità e aperto la strada alla libertà di coscienza e al pluralismo religioso.</p>
+  <p>La Rivoluzione Scientifica del XVII secolo — con Galileo, Keplero, Newton e Cartesio — ha posto le basi del metodo scientifico moderno. L'Illuminismo del XVIII secolo ha prodotto le idee di libertà, uguaglianza e diritti universali che hanno ispirato la Rivoluzione Americana (1776) e la Rivoluzione Francese (1789). La Rivoluzione Industriale, nata in Inghilterra nel tardo XVIII secolo, ha trasformato il modo di produrre, lavorare e vivere in tutto il mondo, spostando masse di contadini nelle città e creando la classe operaia moderna. Nel XIX e XX secolo, tuttavia, l'Europa è stata anche il teatro delle due Guerre Mondiali — le più devastanti nella storia dell'umanità — e dell'Olocausto, il genocidio sistematico di sei milioni di ebrei e milioni di altri perseguitati dal regime nazista.</p>
+  <p>Dopo le devastazioni belliche, l'Europa ha imboccato un cammino straordinario di integrazione e riconciliazione. L'Unione Europea, nata dal Trattato di Roma del 1957 come progetto di pace tra nazioni che si erano combattute per secoli, oggi raggruppa 27 nazioni in un mercato unico di 450 milioni di persone con libera circolazione di beni, servizi, capitali e persone. Lo Spazio Schengen ha abolito i controlli alle frontiere interne. L'euro è la seconda valuta di riserva mondiale. L'Europa ospita oltre 500 siti UNESCO — più di qualsiasi altro continente — e città come Parigi, Roma, Barcellona, Amsterdam, Praga e Vienna sono tra le destinazioni turistiche e culturali più ambite al mondo.</p>
+
+  <a class="back" href="../index.html">← Torna a tutti i continenti</a>
+</div>
+
+<footer>
+  <strong>I Continenti</strong> — Esplora il Mondo ·
+  <a href="https://it.wikipedia.org/wiki/Europa" target="_blank" style="color:var(--gold)">Wikipedia ↗</a>
+</footer>
+</body>
+</html>

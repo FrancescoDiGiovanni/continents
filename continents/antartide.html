@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <script
+  src="http://localhost:4200/loader.js"
+  data-name="Aria"
+  defer>
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Antartide — I Continenti</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1120;--deep:#0e1a2e;--gold:#c9933a;--gold-l:#e8b86d;--teal:#2a9d8f;--muted:#8a9ab5;--sand:#f4ede3;--white:#fff;--accent:#7ec8e3;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--sand);overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+.bar{background:rgba(11,17,32,.9);border-bottom:1px solid rgba(255,255,255,.07);padding:.8rem 2rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;backdrop-filter:blur(14px);}
+.bar-home{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--accent);font-weight:700;}
+.nav-row{display:flex;gap:.8rem;}
+.nav-a{padding:.45rem 1.1rem;border:1px solid rgba(126,200,227,.3);border-radius:6px;font-size:.82rem;color:var(--gold-l);transition:background .2s;white-space:nowrap;}
+.nav-a:hover{background:rgba(126,200,227,.12);}
+.nav-a.off{opacity:.25;pointer-events:none;}
+.hero{padding:4rem 2rem 2.5rem;max-width:960px;margin:0 auto;}
+.flag{font-size:5.5rem;display:block;margin-bottom:1rem;filter:drop-shadow(0 4px 24px rgba(126,200,227,.5));}
+.sub-tag{font-size:.7rem;text-transform:uppercase;letter-spacing:.18em;color:var(--accent);font-weight:500;margin-bottom:.5rem;}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:900;line-height:.95;color:var(--white);margin-bottom:1.5rem;}
+.facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:.9rem;margin-bottom:2.5rem;}
+.fbox{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:1rem 1.2rem;}
+.flabel{font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:.3rem;}
+.fval{font-size:.97rem;color:var(--gold-l);font-weight:500;}
+.wow-box{background:linear-gradient(135deg,rgba(126,200,227,.15),rgba(201,147,58,.06));border:1px solid rgba(126,200,227,.3);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:2.5rem;display:flex;gap:1rem;align-items:flex-start;}
+.wow-icon{font-size:1.8rem;flex-shrink:0;}
+.wow-text{font-size:.9rem;color:var(--sand);line-height:1.6;font-weight:300;}
+.wow-text strong{color:var(--accent);font-weight:500;}
+.desc-wrap{max-width:960px;margin:0 auto;padding:0 2rem 5rem;}
+.desc-wrap h2{font-family:'Playfair Display',serif;font-size:1.75rem;color:var(--white);margin-bottom:1.1rem;}
+.desc-wrap p{color:var(--muted);line-height:1.9;font-size:.98rem;font-weight:300;margin-bottom:1.4rem;}
+.back{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.6rem;background:var(--accent);color:#0b1120;border-radius:8px;font-size:.88rem;font-weight:600;margin-top:1rem;transition:background .2s;}
+.back:hover{background:var(--gold-l);}
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.8rem;border-top:1px solid rgba(255,255,255,.06);}
+footer strong{color:var(--accent);}
+</style>
+</head>
+<body>
+<div class="bar">
+  <a class="bar-home" href="../index.html">🌍 I Continenti</a>
+  <div class="nav-row">
+    <a class="nav-a" href="oceania.html">← Prec.</a>
+    <a class="nav-a off" href="#">Succ. →</a>
+  </div>
+</div>
+
+<div class="hero">
+  <span class="flag">🧊</span>
+  <div class="sub-tag">Il continente più freddo, ventoso e secco della Terra</div>
+  <h1>Antartide</h1>
+  <div class="facts">
+    <div class="fbox"><div class="flabel">Superficie</div><div class="fval">14.200.000 km²</div></div>
+    <div class="fbox"><div class="flabel">Popolazione</div><div class="fval">~1.000–5.000 (stagionale)</div></div>
+    <div class="fbox"><div class="flabel">Status</div><div class="fval">Territorio internazionale</div></div>
+    <div class="fbox"><div class="flabel">Basi scientifiche</div><div class="fval">Oltre 70 (30 nazioni)</div></div>
+    <div class="fbox"><div class="flabel">Punto più alto</div><div class="fval">Monte Vinson (4.892 m)</div></div>
+    <div class="fbox"><div class="flabel">Temp. minima record</div><div class="fval">−89,2°C (Vostok, 1983)</div></div>
+    <div class="fbox"><div class="flabel">Volume di ghiaccio</div><div class="fval">26,5 Mln km³</div></div>
+    <div class="fbox"><div class="flabel">Acqua dolce mondiale</div><div class="fval">70% (nel ghiaccio)</div></div>
+  </div>
+  <div class="wow-box">
+    <span class="wow-icon">🐧</span>
+    <div class="wow-text"><strong>Lo sapevi?</strong> L'Antartide è classificata come deserto polare: riceve meno di 200 mm di precipitazioni annue nelle zone costiere e meno di 50 mm nell'entroterra. Eppure custodisce il 70% di tutta l'acqua dolce del pianeta, congelata nella sua immensa calotta glaciale spessa in media 2.160 metri.</div>
+  </div>
+</div>
+
+<div class="desc-wrap">
+  <h2>La Terra del Ghiaccio Eterno</h2>
+  <p>L'Antartide è il continente più remoto, più freddo, più ventoso e più secco della Terra. Con i suoi 14,2 milioni di km², è il quinto continente per superficie — più grande dell'Europa e quasi il doppio dell'Australia — eppure è quasi completamente privo di abitanti permanenti. L'intero continente è ricoperto da una calotta glaciale che raggiunge uno spessore medio di 2.160 metri e tocca i 4.776 metri nel punto più profondo. Questo strato di ghiaccio, formatosi in decine di milioni di anni, contiene il 70% dell'acqua dolce del pianeta. Se si sciogliesse interamente — ipotesi che i modelli climatici non prevedono nel breve periodo, ma nemmeno escludono nel lunghissimo — il livello dei mari salirebbe di circa 58 metri, sommergendo le coste di ogni continente.</p>
+  <p>L'Antartide è un territorio internazionale regolato dal Trattato Antartico, firmato nel 1959 da 12 nazioni originali — tra cui USA, URSS, Gran Bretagna, Australia e Argentina — e oggi ratificato da 56 paesi, tra cui l'Italia. Il trattato, entrato in vigore nel 1961 e considerato uno dei più importanti successi della diplomazia multilaterale del XX secolo, designa l'Antartide come zona di pace, dedicata esclusivamente alla ricerca scientifica e libera da qualsiasi attività militare, test nucleare e rivendicazione territoriale. Oltre 70 basi scientifiche permanenti o stagionali ospitano tra i 1.000 (in inverno) e i 5.000 (in estate australe) ricercatori provenienti da tutto il mondo. L'Italia gestisce la Stazione Mario Zucchelli (a Baia Terra Nova) e partecipa alla Stazione Concordia, condivisa con la Francia.</p>
+  <p>Nonostante le condizioni estreme, l'Antartide ospita forme di vita sorprendenti e affascinanti. I pinguini imperatori — gli unici animali a riprodursi durante l'inverno antartico, con temperature di −60°C e venti a 200 km/h — formano colonie di decine di migliaia di individui per scaldarsi a vicenda, tenendo le uova sui piedi e proteggendole con una piega addominale. Le foche di Weddell, i leopardi marini aggressivi e le orche cacciatrici presidiano le acque costiere. Le balenottere azzurre — gli animali più grandi mai esistiti sulla Terra, lunghe fino a 30 metri e pesanti 180 tonnellate — si nutrono nelle acque antartiche di krill in quantità enormi. Il krill antartico (Euphausia superba), un piccolo crostaceo lungo pochi centimetri, è probabilmente la specie animale più abbondante della Terra in termini di biomassa totale, stimata in 500 milioni di tonnellate.</p>
+  <p>L'Antartide è una sentinella insostituibile del cambiamento climatico globale. I carotaggi nel ghiaccio — cilindri di ghiaccio antico estratti con trivelle speciali fino a profondità di 3.270 metri alla stazione russa di Vostok — hanno rivelato bolle d'aria intrappolate da 800.000 anni, contenenti campioni dell'atmosfera preistorica. Questi dati hanno permesso agli scienziati di ricostruire con precisione la storia dei gas serra e delle temperature atmosferiche attraverso otto cicli glaciali. La conclusione è inequivocabile: i livelli attuali di CO₂ (oltre 420 ppm) sono senza precedenti negli ultimi 800.000 anni e probabilmente negli ultimi 3 milioni. I ghiacciai dell'Antartide occidentale si stanno già sciogliendo a un ritmo accelerato: il ghiacciaio di Thwaites — soprannominato dai glaciologi "il ghiacciaio del giorno del giudizio" per il suo potenziale contributo all'innalzamento dei mari — è monitorato con crescente preoccupazione dalla comunità scientifica internazionale.</p>
+
+  <a class="back" href="../index.html">← Torna a tutti i continenti</a>
+</div>
+
+<footer>
+  <strong>I Continenti</strong> — Esplora il Mondo ·
+  <a href="https://it.wikipedia.org/wiki/Antartide" target="_blank" style="color:var(--accent)">Wikipedia ↗</a>
+</footer>
+</body>
+</html>

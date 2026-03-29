@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <script
+  src="http://localhost:4200/loader.js"
+  data-name="Aria"
+  defer>
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Asia — I Continenti</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1120;--deep:#0e1a2e;--gold:#c9933a;--gold-l:#e8b86d;--teal:#2a9d8f;--muted:#8a9ab5;--sand:#f4ede3;--white:#fff;--accent:#c94040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--sand);overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+.bar{background:rgba(11,17,32,.9);border-bottom:1px solid rgba(255,255,255,.07);padding:.8rem 2rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;backdrop-filter:blur(14px);}
+.bar-home{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--accent);font-weight:700;}
+.nav-row{display:flex;gap:.8rem;}
+.nav-a{padding:.45rem 1.1rem;border:1px solid rgba(201,64,64,.3);border-radius:6px;font-size:.82rem;color:var(--gold-l);transition:background .2s;white-space:nowrap;}
+.nav-a:hover{background:rgba(201,64,64,.12);}
+.nav-a.off{opacity:.25;pointer-events:none;}
+.hero{padding:4rem 2rem 2.5rem;max-width:960px;margin:0 auto;}
+.flag{font-size:5.5rem;display:block;margin-bottom:1rem;filter:drop-shadow(0 4px 24px rgba(201,64,64,.4));}
+.sub-tag{font-size:.7rem;text-transform:uppercase;letter-spacing:.18em;color:var(--accent);font-weight:500;margin-bottom:.5rem;}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:900;line-height:.95;color:var(--white);margin-bottom:1.5rem;}
+.facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:.9rem;margin-bottom:2.5rem;}
+.fbox{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:1rem 1.2rem;}
+.flabel{font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:.3rem;}
+.fval{font-size:.97rem;color:var(--gold-l);font-weight:500;}
+.wow-box{background:linear-gradient(135deg,rgba(201,64,64,.15),rgba(201,147,58,.08));border:1px solid rgba(201,64,64,.3);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:2.5rem;display:flex;gap:1rem;align-items:flex-start;}
+.wow-icon{font-size:1.8rem;flex-shrink:0;}
+.wow-text{font-size:.9rem;color:var(--sand);line-height:1.6;font-weight:300;}
+.wow-text strong{color:var(--accent);font-weight:500;}
+.desc-wrap{max-width:960px;margin:0 auto;padding:0 2rem 5rem;}
+.desc-wrap h2{font-family:'Playfair Display',serif;font-size:1.75rem;color:var(--white);margin-bottom:1.1rem;}
+.desc-wrap p{color:var(--muted);line-height:1.9;font-size:.98rem;font-weight:300;margin-bottom:1.4rem;}
+.back{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.6rem;background:var(--accent);color:#fff;border-radius:8px;font-size:.88rem;font-weight:600;margin-top:1rem;transition:background .2s;}
+.back:hover{background:var(--gold-l);color:#111;}
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.8rem;border-top:1px solid rgba(255,255,255,.06);}
+footer strong{color:var(--accent);}
+</style>
+</head>
+<body>
+<div class="bar">
+  <a class="bar-home" href="../index.html">🌍 I Continenti</a>
+  <div class="nav-row">
+    <a class="nav-a" href="america.html">← Prec.</a>
+    <a class="nav-a" href="europa.html">Succ. →</a>
+  </div>
+</div>
+
+<div class="hero">
+  <span class="flag">🌏</span>
+  <div class="sub-tag">Il continente più grande e più popoloso della Terra</div>
+  <h1>Asia</h1>
+  <div class="facts">
+    <div class="fbox"><div class="flabel">Superficie</div><div class="fval">44.580.000 km²</div></div>
+    <div class="fbox"><div class="flabel">Popolazione</div><div class="fval">~4,7 miliardi</div></div>
+    <div class="fbox"><div class="flabel">Nazioni</div><div class="fval">49</div></div>
+    <div class="fbox"><div class="flabel">Nazione più popolosa</div><div class="fval">India (1,44 miliardi)</div></div>
+    <div class="fbox"><div class="flabel">Città più grande</div><div class="fval">Tokyo (37 milioni)</div></div>
+    <div class="fbox"><div class="flabel">Punto più alto</div><div class="fval">Everest (8.849 m)</div></div>
+    <div class="fbox"><div class="flabel">Punto più basso</div><div class="fval">Mar Morto (−430 m)</div></div>
+    <div class="fbox"><div class="flabel">Religioni principali</div><div class="fval">Islam, Induismo, Buddhismo</div></div>
+  </div>
+  <div class="wow-box">
+    <span class="wow-icon">🏯</span>
+    <div class="wow-text"><strong>Lo sapevi?</strong> L'Asia è la culla di tutte le grandi religioni del mondo — Induismo, Buddhismo, Taoismo, Confucianesimo, Giudaismo, Cristianesimo e Islam sono nati tutti su questo continente, plasmando la morale, l'arte e la politica di miliardi di persone per millenni.</div>
+  </div>
+</div>
+
+<div class="desc-wrap">
+  <h2>Il Continente dei Record</h2>
+  <p>L'Asia è il continente più grande e più popoloso della Terra: con 44,5 milioni di km² rappresenta il 30% delle terre emerse del pianeta, e i suoi 4,7 miliardi di abitanti costituiscono il 60% dell'intera umanità. Si estende dall'Artico a nord alle isole tropicali dell'Indonesia a sud, dalle coste del Mediterraneo e dell'Egeo a ovest alle rive del Pacifico a est. La sua diversità geografica è senza uguali: comprende la catena dell'Himalaya con il Monte Everest (8.849 m), il punto più alto della Terra, il deserto del Gobi, le steppe della Siberia, le dense foreste pluviali del Borneo e di Sumatra, le pianure alluvionali del Gange e dello Yangtze dove vivono centinaia di milioni di persone, e gli aridi altopiani del Tibet, il "tetto del mondo" a oltre 4.000 metri di quota media.</p>
+  <p>L'Asia è la culla di molte delle più antiche civiltà umane. La Mesopotamia — nell'odierno Iraq, tra i fiumi Tigri ed Eufrate — ha visto nascere la prima scrittura conosciuta, il cuneiforme sumerico, intorno al 3.200 a.C., così come i primi codici di legge (il Codice di Hammurabi), le prime città e le prime biblioteche. La civiltà della Valle dell'Indo, nell'attuale Pakistan, era già organizzata in città pianificate con sistemi fognari e pesi standardizzati 4.500 anni fa. La Cina della Dinastia Shang ha sviluppato una scrittura, una metallurgia del bronzo e una burocrazia imperiale sofisticata oltre 3.000 anni fa. Sono asiatiche le invenzioni della carta, della stampa a caratteri mobili, della bussola, della polvere da sparo, della seta, del vetro soffiato e dell'algebra — strumenti che hanno trasformato la civiltà mondiale.</p>
+  <p>Oggi l'Asia è il motore economico del pianeta. La Cina è la seconda economia mondiale in termini nominali e la prima per parità di potere d'acquisto — la sua crescita degli ultimi quarant'anni, da economia agricola a superpotenza industriale e tecnologica, è probabilmente il più rapido sviluppo economico nella storia dell'umanità. L'India, la più grande democrazia del mondo con 1,44 miliardi di abitanti, ha superato la Cina per popolazione nel 2023 ed è oggi la quinta economia mondiale e uno dei principali poli tecnologici globali. Il Giappone ha costruito nel dopoguerra la terza economia mondiale quasi dal nulla, generando marchi globali come Sony, Toyota, Nintendo e Honda. La Corea del Sud ha trasformato il Paese devastato dalla guerra del 1950-53 in una potenza del K-pop, del cinema (Parasite ha vinto l'Oscar nel 2020), dei semiconduttori e della tecnologia digitale.</p>
+  <p>La biodiversità asiatica è eccezionale e spesso minacciata. Le foreste pluviali del Borneo e di Sumatra ospitano gli orangutan — i nostri parenti più prossimi dopo gorilla, scimpanzé e bonobo — nonché tigri di Sumatra, elefanti pigmei e rinoceronti di Sumatra, tutti criticamente in pericolo di estinzione. Il lago Bajkal in Russia, il più antico e profondo del mondo (1.637 m), contiene il 20% dell'acqua dolce superficiale non ghiacciata del pianeta ed è dimora di una foca d'acqua dolce unica al mondo. Le tigri del Bengala pattugliano le foreste delle Sundarbans al confine tra India e Bangladesh. Il Parco Nazionale di Komodo in Indonesia ospita i draghi di Komodo, i più grandi lucertoloni viventi, capaci di abbattere cervi e bufali con il loro morso letale.</p>
+
+  <a class="back" href="../index.html">← Torna a tutti i continenti</a>
+</div>
+
+<footer>
+  <strong>I Continenti</strong> — Esplora il Mondo ·
+  <a href="https://it.wikipedia.org/wiki/Asia" target="_blank" style="color:var(--accent)">Wikipedia ↗</a>
+</footer>
+</body>
+</html>

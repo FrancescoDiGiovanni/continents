@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <script
+  src="http://localhost:4200/loader.js"
+  data-name="Aria"
+  defer>
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Africa — I Continenti</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1120;--deep:#0e1a2e;--gold:#c9933a;--gold-l:#e8b86d;--teal:#2a9d8f;--muted:#8a9ab5;--sand:#f4ede3;--white:#fff;--accent:#d4813a;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--sand);overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+.bar{background:rgba(11,17,32,.9);border-bottom:1px solid rgba(255,255,255,.07);padding:.8rem 2rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;backdrop-filter:blur(14px);}
+.bar-home{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--accent);font-weight:700;}
+.nav-row{display:flex;gap:.8rem;}
+.nav-a{padding:.45rem 1.1rem;border:1px solid rgba(212,129,58,.3);border-radius:6px;font-size:.82rem;color:var(--gold-l);transition:background .2s;white-space:nowrap;}
+.nav-a:hover{background:rgba(212,129,58,.12);}
+.nav-a.off{opacity:.25;pointer-events:none;}
+.hero{padding:4rem 2rem 2.5rem;max-width:960px;margin:0 auto;}
+.flag{font-size:5.5rem;display:block;margin-bottom:1rem;filter:drop-shadow(0 4px 24px rgba(212,129,58,.4));}
+.sub-tag{font-size:.7rem;text-transform:uppercase;letter-spacing:.18em;color:var(--accent);font-weight:500;margin-bottom:.5rem;}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:900;line-height:.95;color:var(--white);margin-bottom:1.5rem;}
+.facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:.9rem;margin-bottom:2.5rem;}
+.fbox{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:1rem 1.2rem;}
+.flabel{font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:.3rem;}
+.fval{font-size:.97rem;color:var(--gold-l);font-weight:500;}
+.wow-box{background:linear-gradient(135deg,rgba(212,129,58,.15),rgba(201,147,58,.08));border:1px solid rgba(212,129,58,.3);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:2.5rem;display:flex;gap:1rem;align-items:flex-start;}
+.wow-icon{font-size:1.8rem;flex-shrink:0;}
+.wow-text{font-size:.9rem;color:var(--sand);line-height:1.6;font-weight:300;}
+.wow-text strong{color:var(--accent);font-weight:500;}
+.desc-wrap{max-width:960px;margin:0 auto;padding:0 2rem 5rem;}
+.desc-wrap h2{font-family:'Playfair Display',serif;font-size:1.75rem;color:var(--white);margin-bottom:1.1rem;}
+.desc-wrap p{color:var(--muted);line-height:1.9;font-size:.98rem;font-weight:300;margin-bottom:1.4rem;}
+.back{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.6rem;background:var(--accent);color:#111;border-radius:8px;font-size:.88rem;font-weight:600;margin-top:1rem;transition:background .2s;}
+.back:hover{background:var(--gold-l);}
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.8rem;border-top:1px solid rgba(255,255,255,.06);}
+footer strong{color:var(--accent);}
+</style>
+</head>
+<body>
+<div class="bar">
+  <a class="bar-home" href="../index.html">🌍 I Continenti</a>
+  <div class="nav-row">
+    <a class="nav-a off" href="#">← Prec.</a>
+    <a class="nav-a" href="america.html">Succ. →</a>
+  </div>
+</div>
+
+<div class="hero">
+  <span class="flag">🌍</span>
+  <div class="sub-tag">Secondo continente per superficie e popolazione</div>
+  <h1>Africa</h1>
+  <div class="facts">
+    <div class="fbox"><div class="flabel">Superficie</div><div class="fval">30.370.000 km²</div></div>
+    <div class="fbox"><div class="flabel">Popolazione</div><div class="fval">~1,4 miliardi</div></div>
+    <div class="fbox"><div class="flabel">Nazioni</div><div class="fval">54</div></div>
+    <div class="fbox"><div class="flabel">Nazione più grande</div><div class="fval">Algeria (2,38 Mln km²)</div></div>
+    <div class="fbox"><div class="flabel">Città più grande</div><div class="fval">Cairo (~21 milioni)</div></div>
+    <div class="fbox"><div class="flabel">Punto più alto</div><div class="fval">Kilimangiaro (5.895 m)</div></div>
+    <div class="fbox"><div class="flabel">Punto più basso</div><div class="fval">Lago Assal (−155 m)</div></div>
+    <div class="fbox"><div class="flabel">Lingua più diffusa</div><div class="fval">Arabo, Swahili, Hausa</div></div>
+  </div>
+  <div class="wow-box">
+    <span class="wow-icon">🦴</span>
+    <div class="wow-text"><strong>Lo sapevi?</strong> L'Africa è la culla dell'umanità: i più antichi fossili di Homo sapiens, risalenti a circa 315.000 anni fa, sono stati scoperti a Jebel Irhoud, in Marocco. Milioni di anni prima, il Rift della Valle africana era già teatro della nostra evoluzione.</div>
+  </div>
+</div>
+
+<div class="desc-wrap">
+  <h2>Il Continente delle Origini</h2>
+  <p>L'Africa è il secondo continente più grande e più popoloso della Terra, con un'estensione di oltre 30 milioni di km² e 1,4 miliardi di abitanti distribuiti in 54 nazioni sovrane. È circondata dal Mar Mediterraneo a nord, dall'Oceano Atlantico a ovest e dall'Oceano Indiano a est, mentre la penisola del Sinai la collega all'Asia. La sua diversità geografica è vertiginosa: dalle sabbie infuocate del Sahara — il deserto caldo più grande del mondo, esteso su 9,2 milioni di km² — alle foreste pluviali equatoriali del bacino del Congo, dalle savane dell'Africa orientale dove vagano gli ultimi grandi erbivori selvatici agli altopiani etiopici, dalle coste tropicali del Mozambico alle montagne innevate del Kilimangiaro.</p>
+  <p>L'Africa è universalmente riconosciuta come la culla dell'umanità. I fossili di Homo sapiens più antichi conosciuti — datati a circa 315.000 anni fa — sono stati rinvenuti a Jebel Irhoud in Marocco. Milioni di anni prima, il continente ha ospitato i nostri antenati più remoti: Australopithecus africanus, Homo habilis e Homo erectus hanno lasciato le loro tracce nelle gole di Olduvai in Tanzania e lungo l'intero Rift della Valle est-africana. Le grandi civiltà africane precoloniali — l'antico Egitto con le sue piramidi e la sua scrittura geroglifica, Cartagine che sfidò Roma per il dominio del Mediterraneo, il ricchissimo Impero del Mali con la sua capitale Timbuctu, il Grande Zimbabwe con le sue torri di pietra, l'antico Impero Etiopico mai colonizzato — hanno contribuito in modo fondamentale alla storia mondiale.</p>
+  <p>La biodiversità africana è senza pari. Il Serengeti in Tanzania ospita la più grande migrazione di mammiferi del mondo: oltre 1,5 milioni di gnu, zebre e gazzelle attraversano ogni anno la pianura in un ciclo stagionale millenario. Il bacino del Congo, secondo solo all'Amazzonia per dimensioni, è la foresta pluviale più densa del mondo e ospita gorilla di montagna, okapi, bonobo e migliaia di specie endemiche. I "Big Five" — leone, elefante africano, bufalo del Capo, leopardo e rinoceronte — che attirano ogni anno milioni di appassionati di safari, vivono nelle riserve naturali di Kenya, Tanzania, Sudafrica, Zimbabwe e Botswana. La Riserva del Ngorongoro in Tanzania è un'enorme caldera vulcanica che custodisce la più alta concentrazione di fauna selvatica della Terra.</p>
+  <p>Il XX e il XXI secolo hanno segnato l'Africa da trasformazioni epocali. La decolonizzazione, avviata negli anni '50 e '60, ha restituito l'indipendenza a quasi tutte le nazioni del continente, spesso dopo dolorose lotte di liberazione. Oggi l'Africa è il continente con la crescita demografica più rapida del mondo e la popolazione più giovane in assoluto: l'età mediana è di soli 19 anni, e si stima che entro il 2050 l'Africa ospiterà 2,5 miliardi di persone, pari a un quarto dell'umanità. Città come Lagos (25 milioni di abitanti), il Cairo, Kinshasa, Nairobi e Johannesburg sono centri in rapida espansione, poli di innovazione tecnologica, arte contemporanea e imprenditoria. L'Unione Africana, con sede ad Addis Abeba in Etiopia, lavora per l'integrazione economica e politica del continente — un progetto ambizioso che ricorda, per certi versi, la costruzione europea del dopoguerra.</p>
+
+  <a class="back" href="../index.html">← Torna a tutti i continenti</a>
+</div>
+
+<footer>
+  <strong>I Continenti</strong> — Esplora il Mondo ·
+  <a href="https://it.wikipedia.org/wiki/Africa" target="_blank" style="color:var(--accent)">Wikipedia ↗</a>
+</footer>
+</body>
+</html>

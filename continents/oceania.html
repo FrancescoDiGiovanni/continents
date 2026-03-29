@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <script
+  src="http://localhost:4200/loader.js"
+  data-name="Aria"
+  defer>
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Oceania — I Continenti</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1120;--deep:#0e1a2e;--gold:#c9933a;--gold-l:#e8b86d;--teal:#2a9d8f;--muted:#8a9ab5;--sand:#f4ede3;--white:#fff;--accent:#3a8fc9;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--sand);overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+.bar{background:rgba(11,17,32,.9);border-bottom:1px solid rgba(255,255,255,.07);padding:.8rem 2rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;backdrop-filter:blur(14px);}
+.bar-home{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--accent);font-weight:700;}
+.nav-row{display:flex;gap:.8rem;}
+.nav-a{padding:.45rem 1.1rem;border:1px solid rgba(58,143,201,.3);border-radius:6px;font-size:.82rem;color:var(--gold-l);transition:background .2s;white-space:nowrap;}
+.nav-a:hover{background:rgba(58,143,201,.12);}
+.nav-a.off{opacity:.25;pointer-events:none;}
+.hero{padding:4rem 2rem 2.5rem;max-width:960px;margin:0 auto;}
+.flag{font-size:5.5rem;display:block;margin-bottom:1rem;filter:drop-shadow(0 4px 24px rgba(58,143,201,.4));}
+.sub-tag{font-size:.7rem;text-transform:uppercase;letter-spacing:.18em;color:var(--accent);font-weight:500;margin-bottom:.5rem;}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:900;line-height:.95;color:var(--white);margin-bottom:1.5rem;}
+.facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:.9rem;margin-bottom:2.5rem;}
+.fbox{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:1rem 1.2rem;}
+.flabel{font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:.3rem;}
+.fval{font-size:.97rem;color:var(--gold-l);font-weight:500;}
+.wow-box{background:linear-gradient(135deg,rgba(58,143,201,.15),rgba(201,147,58,.08));border:1px solid rgba(58,143,201,.3);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:2.5rem;display:flex;gap:1rem;align-items:flex-start;}
+.wow-icon{font-size:1.8rem;flex-shrink:0;}
+.wow-text{font-size:.9rem;color:var(--sand);line-height:1.6;font-weight:300;}
+.wow-text strong{color:var(--accent);font-weight:500;}
+.desc-wrap{max-width:960px;margin:0 auto;padding:0 2rem 5rem;}
+.desc-wrap h2{font-family:'Playfair Display',serif;font-size:1.75rem;color:var(--white);margin-bottom:1.1rem;}
+.desc-wrap p{color:var(--muted);line-height:1.9;font-size:.98rem;font-weight:300;margin-bottom:1.4rem;}
+.back{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.6rem;background:var(--accent);color:#fff;border-radius:8px;font-size:.88rem;font-weight:600;margin-top:1rem;transition:background .2s;}
+.back:hover{background:var(--gold-l);color:#111;}
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.8rem;border-top:1px solid rgba(255,255,255,.06);}
+footer strong{color:var(--accent);}
+</style>
+</head>
+<body>
+<div class="bar">
+  <a class="bar-home" href="../index.html">🌍 I Continenti</a>
+  <div class="nav-row">
+    <a class="nav-a" href="europa.html">← Prec.</a>
+    <a class="nav-a" href="antartide.html">Succ. →</a>
+  </div>
+</div>
+
+<div class="hero">
+  <span class="flag">🌏</span>
+  <div class="sub-tag">Il continente più piccolo, circondato dall'oceano più grande</div>
+  <h1>Oceania</h1>
+  <div class="facts">
+    <div class="fbox"><div class="flabel">Superficie</div><div class="fval">8.526.000 km²</div></div>
+    <div class="fbox"><div class="flabel">Popolazione</div><div class="fval">~45 milioni</div></div>
+    <div class="fbox"><div class="flabel">Nazioni sovrane</div><div class="fval">14</div></div>
+    <div class="fbox"><div class="flabel">Nazione più grande</div><div class="fval">Australia (7,69 Mln km²)</div></div>
+    <div class="fbox"><div class="flabel">Città più grande</div><div class="fval">Sydney (~5,3 milioni)</div></div>
+    <div class="fbox"><div class="flabel">Punto più alto</div><div class="fval">Puncak Jaya (4.884 m)</div></div>
+    <div class="fbox"><div class="flabel">Punto più basso</div><div class="fval">Lago Eyre (−15 m)</div></div>
+    <div class="fbox"><div class="flabel">Oceano circostante</div><div class="fval">Pacifico e Indiano</div></div>
+  </div>
+  <div class="wow-box">
+    <span class="wow-icon">🦘</span>
+    <div class="wow-text"><strong>Lo sapevi?</strong> Gli aborigeni australiani hanno una cultura continua di oltre 65.000 anni — la più antica della Terra. Quando i primi europei arrivarono in Australia nel 1788, il continente era abitato da circa 500 tribù diverse, con altrettante lingue distinte.</div>
+  </div>
+</div>
+
+<div class="desc-wrap">
+  <h2>Il Continente degli Antipodi</h2>
+  <p>L'Oceania è il più piccolo dei continenti per superficie terrestre, ma il più vasto se si considera la sua estensione oceanica: le acque del Pacifico e dell'Oceano Indiano che la circondano abbracciano un'area più grande di qualsiasi altro continente. Con 8,5 milioni di km² di terra ferma e soli 45 milioni di abitanti, è anche il continente meno popolato dopo l'Antartide. Comprende l'Australia, la Nuova Zelanda, Papua Nuova Guinea — l'isola più grande del Pacifico dopo il Borneo — e decine di arcipelaghi distribuiti nelle tre grandi regioni del Pacifico: Melanesia (Vanuatu, Figi, Isole Salomone), Micronesia (Palau, Kiribati, Isole Marshall) e Polinesia (Samoa, Tonga, Cook Islands, Hawaii — queste ultime appartenenti agli Stati Uniti).</p>
+  <p>L'Australia è il cuore del continente: occupa da sola l'85% della superficie terrestre dell'Oceania ed è l'unico paese al mondo a coincidere perfettamente con un intero continente. Il suo immenso entroterra — l'Outback — è uno dei paesaggi più remoti e affascinanti del pianeta: vasti deserti di pietra rossa, formazioni rocciose colossali come l'Uluru (considerata sacra dagli aborigeni Anangu), canyon profondi e cieli di una trasparenza straordinaria, lontani dall'inquinamento luminoso delle città. Al largo del Queensland, la Grande Barriera Corallina — il sistema biologico vivente più grande della Terra, esteso per 2.300 km — è visibile dallo spazio e ospita oltre 9.000 specie marine, tra cui 1.600 specie di pesci, 4.000 di molluschi e 240 di uccelli.</p>
+  <p>Gli aborigeni australiani e i Maori della Nuova Zelanda possiedono alcune delle culture più antiche e ricche del mondo. Gli aborigeni vivono in Australia da almeno 65.000 anni — arrivati probabilmente quando un corridoio terrestre collegava ancora l'Australia al Sud-Est asiatico — e hanno sviluppato un rapporto profondissimo con la terra, con tradizioni orali, artistiche e spirituali di straordinaria complessità tramandate di generazione in generazione. Il Dreamtime — la visione cosmica del mondo degli aborigeni, che racconta la creazione di fiumi, montagne, animali e piante — è uno dei sistemi di pensiero spirituale più antichi dell'umanità. La Nuova Zelanda, colonizzata dai Maori intorno al 1300 d.C., ha assegnato nel 2017 al fiume Whanganui lo status legale di persona vivente, riconoscendo il suo valore spirituale e culturale per il popolo Maori.</p>
+  <p>L'Oceania è anche un laboratorio naturale unico al mondo. L'isolamento evolutivo dell'Australia, separata dagli altri continenti da circa 85 milioni di anni, ha prodotto una fauna completamente diversa: canguri, wallaby, koala, wombat, diavoli della Tasmania, echidne e ornitorinchi — gli unici mammiferi ovipari del mondo — si trovano esclusivamente qui. La Nuova Guinea ospita gli uccelli del paradiso, con i loro piumaggi dai colori impossibili, e le cassoware, grandi uccelli non volatori capaci di uccidere un uomo con un calcio. Purtroppo, molte specie dell'Oceania sono oggi minacciate dai cambiamenti climatici: l'innalzamento del livello del mare sta già sommergendo gli atolli bassi della Polinesia — le isole Tuvalu e Kiribati potrebbero diventare inabitabili entro la fine del secolo.</p>
+
+  <a class="back" href="../index.html">← Torna a tutti i continenti</a>
+</div>
+
+<footer>
+  <strong>I Continenti</strong> — Esplora il Mondo ·
+  <a href="https://it.wikipedia.org/wiki/Oceania" target="_blank" style="color:var(--accent)">Wikipedia ↗</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <script
+  src="http://localhost:4200/loader.js"
+  data-name="Aria"
+  defer>
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>I Continenti — Esplora il Mondo</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1120;--deep:#0e1a2e;--gold:#c9933a;--gold-l:#e8b86d;--teal:#2a9d8f;--muted:#8a9ab5;--sand:#f4ede3;--white:#fff;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--sand);overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+
+/* HERO */
+.hero{min-height:100vh;background:
+  radial-gradient(ellipse at 15% 50%,rgba(42,157,143,.2) 0,transparent 55%),
+  radial-gradient(ellipse at 85% 20%,rgba(201,147,58,.12) 0,transparent 50%),
+  radial-gradient(ellipse at 50% 80%,rgba(224,123,57,.1) 0,transparent 50%),
+  linear-gradient(160deg,#08101f 0,#0b1728 55%,#08101f 100%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:4rem 2rem;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;
+  background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px),
+                    radial-gradient(circle,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:60px 60px,30px 30px;background-position:0 0,15px 15px;pointer-events:none;}
+.globe{font-size:3.5rem;margin-bottom:1rem;display:block;animation:float 6s ease-in-out infinite;
+  filter:drop-shadow(0 0 28px rgba(42,157,143,.5));}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,8vw,7rem);
+  font-weight:900;line-height:.95;color:var(--white);margin-bottom:.3em;}
+.hero h1 span{color:var(--gold);font-style:italic;}
+.hero-sub{font-size:1.05rem;color:var(--muted);max-width:520px;margin:1.2rem auto 2.5rem;
+  line-height:1.75;font-weight:300;}
+.hero-stats{display:flex;gap:2.5rem;justify-content:center;flex-wrap:wrap;}
+.stat-num{font-family:'Playfair Display',serif;font-size:2.1rem;font-weight:700;
+  color:var(--gold-l);display:block;}
+.stat-lbl{font-size:.73rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);}
+.scroll-hint{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);
+  color:var(--muted);font-size:.73rem;letter-spacing:.12em;text-transform:uppercase;
+  animation:pulse 2s ease-in-out infinite;}
+.scroll-hint::after{content:' ↓';}
+@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+
+/* BELT */
+.belt{background:linear-gradient(90deg,rgba(42,157,143,.12),rgba(201,147,58,.1),rgba(42,157,143,.12));
+  border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);
+  padding:2.5rem 2rem;}
+.belt-inner{max-width:1200px;margin:0 auto;display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:1.8rem;text-align:center;}
+.bi{font-size:1.9rem;margin-bottom:.4rem;display:block;}
+.bn{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:900;
+  color:var(--gold-l);line-height:1;margin-bottom:.3rem;}
+.bd{font-size:.8rem;color:var(--muted);font-weight:300;}
+
+/* MAIN SECTION */
+section{max-width:1200px;margin:0 auto;padding:4rem 2rem;}
+.slbl{font-size:.7rem;text-transform:uppercase;letter-spacing:.18em;color:var(--teal);
+  margin-bottom:.7rem;font-weight:500;}
+.stitle{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);
+  font-weight:700;color:var(--white);margin-bottom:.4em;line-height:1.15;}
+.stitle em{color:var(--gold);font-style:italic;}
+.sdesc{color:var(--muted);font-size:.98rem;line-height:1.7;max-width:560px;
+  margin-bottom:2.5rem;font-weight:300;}
+
+/* GRID */
+#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.2rem;}
+.card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+  border-radius:14px;padding:1.6rem;display:flex;flex-direction:column;
+  transition:transform .25s,border-color .25s,background .25s;position:relative;overflow:hidden;}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--teal),var(--gold));opacity:0;transition:opacity .25s;}
+.card:hover{transform:translateY(-4px);border-color:rgba(201,147,58,.3);background:rgba(255,255,255,.07);}
+.card:hover::before{opacity:1;}
+.c-flag{font-size:2.8rem;margin-bottom:.6rem;display:block;}
+.c-name{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700;
+  color:var(--white);margin-bottom:.15rem;}
+.c-sub{font-size:.66rem;text-transform:uppercase;letter-spacing:.12em;color:var(--teal);
+  margin-bottom:.7rem;font-weight:500;}
+.c-facts{list-style:none;flex:1;display:flex;flex-direction:column;gap:.28rem;margin-bottom:.7rem;}
+.c-facts li{font-size:.78rem;color:var(--muted);display:flex;justify-content:space-between;
+  padding-bottom:.28rem;border-bottom:1px solid rgba(255,255,255,.05);font-weight:300;}
+.c-facts li strong{color:var(--sand);font-weight:400;}
+.c-wow{font-size:.73rem;color:rgba(42,157,143,.9);font-weight:400;line-height:1.4;
+  margin-bottom:.6rem;font-style:italic;border-left:2px solid rgba(42,157,143,.4);padding-left:.6rem;}
+.c-cta{font-size:.78rem;color:var(--gold);font-weight:500;margin-top:auto;}
+
+/* INFO CARDS */
+.map-section{background:rgba(255,255,255,.02);border-top:1px solid rgba(255,255,255,.06);
+  border-bottom:1px solid rgba(255,255,255,.06);padding:3rem 2rem;}
+.map-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+@media(max-width:600px){.map-inner{grid-template-columns:1fr;}#grid{grid-template-columns:1fr;}}
+.map-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+  border-radius:14px;padding:1.5rem;}
+.map-card h3{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--white);margin-bottom:.8rem;}
+.map-card p{font-size:.85rem;color:var(--muted);line-height:1.7;font-weight:300;}
+.mc-num{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:900;color:var(--gold-l);margin-bottom:.3rem;}
+
+footer{text-align:center;padding:2.5rem 2rem;color:var(--muted);font-size:.8rem;
+  border-top:1px solid rgba(255,255,255,.06);}
+footer strong{color:var(--gold);}
+.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.1),transparent);margin:0 2rem;}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <span class="globe">🌍</span>
+  <h1>I<br><span>Continenti</span></h1>
+  <p class="hero-sub">Una guida visiva ai sei grandi continenti del pianeta Terra — dall'Artico all'Antartide, dal Pacifico all'Atlantico.</p>
+  <div class="hero-stats">
+    <div><span class="stat-num">6</span><span class="stat-lbl">Continenti</span></div>
+    <div><span class="stat-num">8 Mld</span><span class="stat-lbl">Persone</span></div>
+    <div><span class="stat-num">149 Mln km²</span><span class="stat-lbl">Superficie</span></div>
+    <div><span class="stat-num">195</span><span class="stat-lbl">Nazioni</span></div>
+  </div>
+  <div class="scroll-hint">Scorri per esplorare</div>
+</div>
+
+<!-- BELT -->
+<div class="belt">
+  <div class="belt-inner">
+    <div><span class="bi">🏔️</span><div class="bn">8.849 m</div><div class="bd">Monte Everest — il punto più alto della Terra, in Asia (Himalaya)</div></div>
+    <div><span class="bi">❄️</span><div class="bn">−89,2°C</div><div class="bd">Temperatura minima record alla Stazione Vostok, Antartide (1983)</div></div>
+    <div><span class="bi">🌿</span><div class="bn">5,5 Mln</div><div class="bd">km² della foresta amazzonica — il 10% di tutte le specie viventi</div></div>
+    <div><span class="bi">🌊</span><div class="bn">70%</div><div class="bd">Della superficie terrestre coperta dagli oceani tra i continenti</div></div>
+    <div><span class="bi">👣</span><div class="bn">315.000</div><div class="bd">anni fa — i più antichi fossili di Homo sapiens, trovati in Africa</div></div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<section>
+  <div class="slbl">Esplora i Continenti</div>
+  <h2 class="stitle">Le <em>Sei Grandi Terre</em></h2>
+  <p class="sdesc">Clicca su un continente per scoprire la sua storia, la sua geografia e le sue curiosità straordinarie.</p>
+  <div id="grid"></div>
+</section>
+
+<div class="divider"></div>
+
+<!-- INFO CARDS -->
+<div class="map-section">
+  <div style="max-width:1200px;margin:0 auto;padding:0 2rem 2rem;">
+    <div class="slbl">Geografia del Mondo</div>
+    <h2 class="stitle">Un Pianeta di <em>Meraviglie</em></h2>
+    <p class="sdesc" style="margin-bottom:2rem;">La Terra è il terzo pianeta del Sistema Solare e l'unico conosciuto ad ospitare la vita. I suoi sei continenti racchiudono ecosistemi, culture e paesaggi di straordinaria diversità.</p>
+  </div>
+  <div class="map-inner" style="max-width:1200px;margin:0 auto;">
+    <div class="map-card">
+      <h3>🌍 Estensione Totale</h3>
+      <p>Le terre emerse coprono circa 149 milioni di km² — il 29% della superficie totale della Terra. Il restante 71% (circa 361 milioni di km²) è occupato dagli oceani. Il continente più grande è l'Asia con 44,5 milioni di km²; il più piccolo è l'Oceania con 8,5 milioni di km².</p>
+    </div>
+    <div class="map-card">
+      <h3>👥 La Popolazione Mondiale</h3>
+      <p>Gli 8 miliardi di esseri umani sono distribuiti in modo molto diseguale: l'Asia ospita il 60% dell'umanità, l'Africa il 17%, le Americhe il 13%, l'Europa il 9% e l'Oceania meno dell'1%. L'Antartide è l'unico continente senza popolazione permanente.</p>
+    </div>
+    <div class="map-card">
+      <h3>🏔️ Punti Estremi</h3>
+      <div class="mc-num">8.849 m</div>
+      <p>È l'altezza del Monte Everest (Asia), il punto più alto della Terra. Il punto più basso terrestre è il Mar Morto (−430 m). Il paese con l'altitudine media più bassa è le Maldive (1,5 m s.l.m.) — già minacciato dall'innalzamento dei mari.</p>
+    </div>
+    <div class="map-card">
+      <h3>🌡️ Climi ed Ecosistemi</h3>
+      <p>La Terra ospita 14 biomi principali: dalla tundra artica alle foreste pluviali tropicali, dalle savane ai deserti caldi e freddi. Le foreste tropicali — Amazzonia, Congo e Sud-Est asiatico — coprono solo il 6% della superficie terrestre ma ospitano oltre il 50% di tutte le specie viventi del pianeta.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Realizzato con ❤️ per gli appassionati di geografia · <strong>I Continenti</strong> · Clicca su un continente per la pagina dedicata</p>
+</footer>
+
+<script>
+const DATA = [
+  {id:"africa",    emoji:"🌍", name:"Africa",        sub:"La culla dell'umanità",              area:30370000, pop:1400000000, nations:54, peak:"Kilimangiaro (5.895 m)",  wow:"L'Africa ospita il deserto più grande del mondo: il Sahara, esteso su circa 9,2 milioni di km²."},
+  {id:"america",   emoji:"🌎", name:"Le Americhe",   sub:"Dal Polo Nord alla Patagonia",       area:42550000, pop:1030000000, nations:57, peak:"Aconcagua (6.961 m)",     wow:"Le Americhe si estendono per oltre 14.000 km, da Barrow in Alaska fino a Capo Horn in Cile."},
+  {id:"asia",      emoji:"🌏", name:"Asia",           sub:"Il continente dei record",           area:44580000, pop:4700000000, nations:49, peak:"Everest (8.849 m)",        wow:"L'Asia ospita il 60% della popolazione mondiale e le due nazioni più popolose: India e Cina."},
+  {id:"europa",    emoji:"🌍", name:"Europa",         sub:"La culla della civiltà occidentale", area:10530000, pop:748000000,  nations:44, peak:"Elbrus (5.642 m)",         wow:"L'Europa ospita oltre 500 siti UNESCO — più di qualsiasi altro continente al mondo."},
+  {id:"oceania",   emoji:"🌏", name:"Oceania",        sub:"Il continente degli antipodi",       area:8526000,  pop:45000000,  nations:14, peak:"Puncak Jaya (4.884 m)",    wow:"Gli aborigeni australiani hanno una cultura continua di oltre 65.000 anni — la più antica della Terra."},
+  {id:"antartide", emoji:"🧊", name:"Antartide",      sub:"La terra del ghiaccio eterno",       area:14200000, pop:5000,      nations:0,  peak:"Monte Vinson (4.892 m)",   wow:"L'Antartide contiene il 70% dell'acqua dolce del pianeta, intrappolata nel ghiaccio millenario."},
+];
+
+function fmtArea(n){
+  if(n>=1000000) return (n/1000000).toFixed(1).replace('.',',')+' Mln km²';
+  return n.toLocaleString('it-IT')+' km²';
+}
+function fmtPop(n){
+  if(n>=1000000000) return (n/1000000000).toFixed(1).replace('.',',')+' miliardi';
+  if(n>=1000000) return (n/1000000).toFixed(0)+' milioni';
+  return '~'+n.toLocaleString('it-IT');
+}
+
+document.getElementById('grid').innerHTML = DATA.map(c=>`
+  <a href="continents/${c.id}.html" class="card">
+    <span class="c-flag">${c.emoji}</span>
+    <div class="c-name">${c.name}</div>
+    <div class="c-sub">${c.sub}</div>
+    <ul class="c-facts">
+      <li>Superficie <strong>${fmtArea(c.area)}</strong></li>
+      <li>Popolazione <strong>${fmtPop(c.pop)}</strong></li>
+      <li>Nazioni <strong>${c.nations===0?'Territorio internazionale':c.nations}</strong></li>
+      <li>Punto più alto <strong>${c.peak}</strong></li>
+    </ul>
+    <div class="c-wow">${c.wow}</div>
+    <span class="c-cta">Scopri di più →</span>
+  </a>
+`).join('');
+</script>
+</body>
+</html>

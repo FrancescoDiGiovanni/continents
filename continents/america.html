@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <script
+  src="http://localhost:4200/loader.js"
+  data-name="Aria"
+  defer>
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Le Americhe — I Continenti</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1120;--deep:#0e1a2e;--gold:#c9933a;--gold-l:#e8b86d;--teal:#2a9d8f;--muted:#8a9ab5;--sand:#f4ede3;--white:#fff;--accent:#2a9d8f;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--sand);overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+.bar{background:rgba(11,17,32,.9);border-bottom:1px solid rgba(255,255,255,.07);padding:.8rem 2rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;backdrop-filter:blur(14px);}
+.bar-home{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--accent);font-weight:700;}
+.nav-row{display:flex;gap:.8rem;}
+.nav-a{padding:.45rem 1.1rem;border:1px solid rgba(42,157,143,.3);border-radius:6px;font-size:.82rem;color:var(--gold-l);transition:background .2s;white-space:nowrap;}
+.nav-a:hover{background:rgba(42,157,143,.12);}
+.nav-a.off{opacity:.25;pointer-events:none;}
+.hero{padding:4rem 2rem 2.5rem;max-width:960px;margin:0 auto;}
+.flag{font-size:5.5rem;display:block;margin-bottom:1rem;filter:drop-shadow(0 4px 24px rgba(42,157,143,.4));}
+.sub-tag{font-size:.7rem;text-transform:uppercase;letter-spacing:.18em;color:var(--accent);font-weight:500;margin-bottom:.5rem;}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:900;line-height:.95;color:var(--white);margin-bottom:1.5rem;}
+.facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:.9rem;margin-bottom:2.5rem;}
+.fbox{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:1rem 1.2rem;}
+.flabel{font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:.3rem;}
+.fval{font-size:.97rem;color:var(--gold-l);font-weight:500;}
+.wow-box{background:linear-gradient(135deg,rgba(42,157,143,.15),rgba(201,147,58,.08));border:1px solid rgba(42,157,143,.3);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:2.5rem;display:flex;gap:1rem;align-items:flex-start;}
+.wow-icon{font-size:1.8rem;flex-shrink:0;}
+.wow-text{font-size:.9rem;color:var(--sand);line-height:1.6;font-weight:300;}
+.wow-text strong{color:var(--accent);font-weight:500;}
+.desc-wrap{max-width:960px;margin:0 auto;padding:0 2rem 5rem;}
+.desc-wrap h2{font-family:'Playfair Display',serif;font-size:1.75rem;color:var(--white);margin-bottom:1.1rem;}
+.desc-wrap p{color:var(--muted);line-height:1.9;font-size:.98rem;font-weight:300;margin-bottom:1.4rem;}
+.back{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.6rem;background:var(--accent);color:#fff;border-radius:8px;font-size:.88rem;font-weight:600;margin-top:1rem;transition:background .2s;}
+.back:hover{background:var(--gold-l);color:#111;}
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.8rem;border-top:1px solid rgba(255,255,255,.06);}
+footer strong{color:var(--accent);}
+</style>
+</head>
+<body>
+<div class="bar">
+  <a class="bar-home" href="../index.html">🌍 I Continenti</a>
+  <div class="nav-row">
+    <a class="nav-a" href="africa.html">← Prec.</a>
+    <a class="nav-a" href="asia.html">Succ. →</a>
+  </div>
+</div>
+
+<div class="hero">
+  <span class="flag">🌎</span>
+  <div class="sub-tag">Primo continente per estensione Nord-Sud</div>
+  <h1>Le Americhe</h1>
+  <div class="facts">
+    <div class="fbox"><div class="flabel">Superficie</div><div class="fval">42.550.000 km²</div></div>
+    <div class="fbox"><div class="flabel">Popolazione</div><div class="fval">~1,03 miliardi</div></div>
+    <div class="fbox"><div class="flabel">Nazioni</div><div class="fval">57</div></div>
+    <div class="fbox"><div class="flabel">Nazione più grande</div><div class="fval">Canada (9,98 Mln km²)</div></div>
+    <div class="fbox"><div class="flabel">Città più grande</div><div class="fval">Città del Messico (~22 Mln)</div></div>
+    <div class="fbox"><div class="flabel">Punto più alto</div><div class="fval">Aconcagua (6.961 m)</div></div>
+    <div class="fbox"><div class="flabel">Punto più basso</div><div class="fval">Laguna del Carbón (−105 m)</div></div>
+    <div class="fbox"><div class="flabel">Lingue principali</div><div class="fval">Spagnolo, Inglese, Portoghese</div></div>
+  </div>
+  <div class="wow-box">
+    <span class="wow-icon">🌎</span>
+    <div class="wow-text"><strong>Lo sapevi?</strong> Cristoforo Colombo raggiunse le Americhe nel 1492, ma i popoli indigeni abitavano il continente da almeno 15.000–20.000 anni prima di lui. All'arrivo degli europei, le Americhe ospitavano tra 40 e 100 milioni di persone, con civiltà avanzate come Aztechi, Maya e Incas.</div>
+  </div>
+</div>
+
+<div class="desc-wrap">
+  <h2>Dal Polo Nord alla Patagonia</h2>
+  <p>Le Americhe comprendono due grandi masse continentali — l'America del Nord e l'America del Sud — unite dall'istmo dell'America Centrale, per un'estensione totale di oltre 42 milioni di km² che si sviluppa dal Polo Nord alle acque gelide di Capo Horn. Il continente bagna le coste degli Oceani Atlantico e Pacifico e ospita oltre un miliardo di persone distribuite in 57 paesi e territori. La sua varietà è estrema: dalla tundra artica del Canada e dell'Alaska alle foreste pluviali tropicali dell'Amazzonia, dai ghiacciai della Patagonia ai deserti di Atacama e Sonora, dalle praterie delle Grandi Pianure nordamericane all'altopiano andino percorso dalle antiche civiltà precolombiane.</p>
+  <p>Prima dell'arrivo degli europei, le Americhe erano abitate da centinaia di civiltà autoctone di straordinaria sofisticazione. Gli Aztechi avevano costruito Tenochtitlán — l'odierna Città del Messico — su un lago, con canali, acquedotti e un mercato che stupì i conquistadores spagnoli più di qualsiasi città europea coeva. Gli Incas avevano tessuto una rete di oltre 40.000 km di strade attraverso le Ande, senza ruota né cavalli, collegando un impero che si estendeva per 4.300 km lungo la costa del Pacifico. I Maya avevano sviluppato un calendario più preciso di quello gregoriano, una matematica con il concetto dello zero e una scrittura geroglifica raffinata. L'arrivo di Colombo nel 1492 e la successiva colonizzazione europea portarono a un collasso demografico catastrofico tra le popolazioni indigene — causato da violenza, schiavitù e soprattutto da malattie come il vaiolo — e all'istituzione del commercio triangolare degli schiavi africani.</p>
+  <p>Oggi il Nord America è dominato dagli Stati Uniti, la prima economia mondiale con un PIL di oltre 25 trilioni di dollari, e dal Canada, il secondo paese più grande al mondo per superficie, noto per i suoi immensi spazi incontaminati, le sue foreste boreali e i suoi ghiacciai. Il Messico, con 130 milioni di abitanti e la sua straordinaria eredità precolombiana, è la quattordicesima economia mondiale. Il Sud America è dominato dal Brasile — gigante lusofono che occupa quasi la metà del subcontinente — e dalle Ande, la catena montuosa più lunga del mondo (7.000 km), che percorre l'intera costa occidentale ospitando vette come l'Aconcagua (6.961 m), il punto più alto del continente americano.</p>
+  <p>Le Americhe custodiscono ecosistemi di importanza planetaria. La foresta amazzonica, che si estende per 5,5 milioni di km² tra Brasile, Perù, Colombia e altri sette paesi, è il polmone verde del pianeta: ospita il 10% di tutte le specie viventi conosciute, regola il ciclo delle piogge del Sud America intero e assorbe enormi quantità di CO₂. Il deserto di Atacama in Cile è il luogo più arido della Terra; le Cascate dell'Iguazú al confine tra Argentina e Brasile sono tra le più spettacolari al mondo; la Valle della Morte in California ha registrato la temperatura più alta mai misurata sul pianeta (+56,7°C). Le città delle Americhe rispecchiano questa diversità: dalla cosmopolita New York, capitale finanziaria globale, a Buenos Aires, la "Parigi del Sud America", a Rio de Janeiro con il suo Carnevale e il Cristo Redentore a Cuzco, l'antica capitale dell'Impero Inca.</p>
+
+  <a class="back" href="../index.html">← Torna a tutti i continenti</a>
+</div>
+
+<footer>
+  <strong>I Continenti</strong> — Esplora il Mondo ·
+  <a href="https://it.wikipedia.org/wiki/Americhe" target="_blank" style="color:var(--accent)">Wikipedia ↗</a>
+</footer>
+</body>
+</html>
